@@ -2,10 +2,26 @@
 <html lang=en>
     <head>
         <meta charset=utf-8>
-        <title></title>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="lol.js"></script>
+        <title>pay richo for helping you not die!</title>
     </head>
     <body>
-      oh hey there
+      <div height=300>
+        <p id="description"></p>
+      </div>
+      <form class="PaymentForm">
+        <div class="CardElement">
+          <!-- A Stripe Element is inserted here -->
+        </div>
+        <div class="PaymentForm-error">
+          <!-- Used to display payment errors -->
+        </div>
+        <div class="PaymentForm-success">
+          <!-- Used to display payment errors -->
+        </div>
+        <button class="PaymentForm-submit">Submit payment</button>
+      </form>
     </body>
 </html>
 
